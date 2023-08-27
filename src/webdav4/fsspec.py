@@ -185,7 +185,12 @@ class WebdavFileSystem(AbstractFileSystem):
             return self.makedirs(path2)
 
         super().copy(
-            path1, path2, recursive=recursive, maxdepth=maxdepth, on_error=on_error, **kwargs
+            path1,
+            path2,
+            recursive=recursive,
+            maxdepth=maxdepth,
+            on_error=on_error,
+            **kwargs
         )
         return None
 
