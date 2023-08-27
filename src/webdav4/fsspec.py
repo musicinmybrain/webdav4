@@ -190,7 +190,7 @@ class WebdavFileSystem(AbstractFileSystem):
             recursive=recursive,
             maxdepth=maxdepth,
             on_error=on_error,
-            **kwargs
+            **kwargs,
         )
         return None
 
